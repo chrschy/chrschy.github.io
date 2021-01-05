@@ -14,7 +14,7 @@ footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url: chrschy.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+# baseurl: /al-folio # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
@@ -48,7 +48,7 @@ orcid_id: 0000-0002-6128-3556 # your ORCID ID
 # medium_username: # your Medium username
 # quora_username: # your Quora username
 # publons_id: # your ID on Publons
-research_gate_profile: Christopher.Schymura # your profile on ResearchGate
+research_gate_profile: Christopher_Schymura # your profile on ResearchGate
 # blogger_url: # your blogger URL
 # keybase_username: # your keybase user name
 
@@ -154,7 +154,7 @@ enable_google_analytics:  false
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          false
-enable_darkmode:          true
+enable_darkmode:          false
 show_social_icons:        false
 
 # -----------------------------------------------------------------------------
