@@ -1,430 +1,309 @@
-/*******************************************************************************
- * Styles for the base elements of the theme.
- ******************************************************************************/
 
-// Typography
+/** Variables **********************************************
+$base-font-family:              Helvetica, sans-serif;
+$base-font-size:                15px;
+$base-line-height:              1.5em;
+$horizontal-spacing-unit:       50px;
+$vertical-spacing-unit:         40px;
+$nav-height:                    56px;
 
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
-  color: var(--global-text-color);
+/* portfolio tinkering */
+$img_spacing: 5px;
+$img_height: 275px;
+$caption_font_size: 12px;
+$caption_color: #3e4551;
+
+/* COLORS  */
+$red:           #FF3636;
+$orange:        #F29105;
+$blue:          #2698BA;
+$green:         #11D68B;
+$lime_green:    #B7D12A;
+$purple:        #B509AC;
+$brown_orange:  #C68646;
+$web_blue:      #0099CC;
+
+
+$grey-color-dark:   #333;  /* footer */
+$grey-color-light:  #ddd;  /* navigation bar border */
+$text-color:        rgb(60, 72, 88); /* #666; */
+
+/* Set theme color *************************/
+$theme-color: $web_blue; /* #b71c1c; */
+$background-color: #fdfdfd;
+
+/************************************************************/
+
+.badge-notify {
+    background: $theme-color !important;
 }
 
-a, table.table a {
-  color: var(--global-theme-color);
-  &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
-  }
-  &:hover:after {
-    width: 100%;
-  }
+body {
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
 }
 
-// Math
-
-.equation {
-  margin-bottom: 1rem;
-  text-align: center;
+.breadcrumb {
+    color: $text-color;
+    background-color: $background-color;
 }
 
-// Caption
-
-.caption {
-  font-size: 0.875rem;
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+.table {
+    color: $text-color;
 }
 
-
-// Profile
-
-.profile {
-  margin-left: 1rem;
-  width: 100%;
-
-  .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
-    font-size: 1.2rem;
-    p {
-      display: inline-block;
-      margin: 0;
-    }
-  }
+.navbar a {
+    color: $text-color !important;
 }
 
-@media (min-width: 576px) {
-  .profile {
-    width: 30%;
-    .address {
-      p { display: block; }
-    }
-  }
-}
-
-.post-description {
-  margin-bottom: 2rem;
-  font-size: 0.875rem;
-  a {
-    color: inherit;
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
-  }
-}
-
-
-// Navbar customization
-
-.navbar {
-  box-shadow: none;
-  border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
-  background-color: var(--global-bg-color);
-}
-.navbar.navbar-light {
-  // Remove link decoration
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .navbar-brand {
-    color: var(--global-text-color);
-  }
-  .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
-    }
-  }
-  .navbar-nav .nav-item.active>.nav-link {
-      background-color: inherit;
-      font-weight: bolder;
-      color: var(--global-theme-color);
-      &:hover {
-        color: var(--global-hover-color);
-      }
-  }
-  .contact-icon {
-    font-size: 2rem;
+footer {
     a {
-      &:hover {
-        color: var(--global-hover-color);
-      }
+        color: $theme-color;
     }
-  }
-}
 
-.navbar-toggler {
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: $grey-color-dark;
-    border-radius: 1px;
-    margin-bottom: 4px;
-    transition: all 0.2s;
-  }
-  .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-  }
-  .middle-bar {
-    opacity: 0;
-  }
-  .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-  }
-}
-
-.navbar-toggler.collapsed {
-  .top-bar {
-    transform: rotate(0);
-  }
-  .middle-bar {
-    opacity: 1;
-  }
-  .bottom-bar {
-    transform: rotate(0);
-  }
-}
-
-
-// News
-
-.news table td {
-  font-size: 1rem;
-  color: var(--global-text-color);
-}
-
-.news table th {
-  color: var(--global-text-color);
-}
-
-// Social (bottom)
-
-.social {
-  text-align: center;
-  .contact-icon {
-    font-size: 4rem;
-    a {
-      color: var(--global-icon-color);
-      &:hover {
-        color: var(--global-theme-color);
-      }
+    a:hover {
+        color: darken($theme-color, 40%);
     }
-  }
-  .contact-note {
-    font-size: 0.8rem;
-  }
 }
 
-
-// Footer
-footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
-  .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
-  }
-  a {
-    color: var(--global-footer-link-color);
-    &:hover {
-      color: pink;
-      text-decoration: none;
-    }
-  }
+.title {
+    font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
-footer.sticky-bottom {
-  border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
-}
+// Links
 
-
-// Blog
-
-.header-bar {
-  border-bottom: 1px solid $grey-color-light;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  h1 {
-    color: var(--global-theme-color);
-    font-size: 5rem;
-  }
-}
-
-.post-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  li {
-    border-bottom: 1px solid $grey-color-light;
-    list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    .post-meta {
-      color: $grey-color;
-      font-size: 0.875rem;
-      margin-bottom: 0;
-    }
-    a {
-      color: var(--global-text-color);
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-}
-
-.pagination {
-  .page-item {
-    .page-link {
-      color: var(--global-text-color);
-      &:hover {
-        color: $black-color;
-      }
-    }
-    &.active .page-link {
-      background-color: var(--global-theme-color);
-      &:hover {
-        background-color: var(--global-theme-color);
-      }
-    }
-  }
-}
-
-
-// Distill
-
-.distill {
-  a:hover {
-    border-bottom-color: var(--global-theme-color);
+a {
+    color: $theme-color;
     text-decoration: none;
-  }
-}
 
-
-// Projects
-
-.projects {
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
+    &:hover {
+        text-decoration: none;
     }
-  }
-  .card img {
-    width: 100%;
-  }
 }
 
+.plain-link .fa {
+    color: #747373;
+}
+
+.navbar-brand a {
+    color: #f8f9fa !important;
+}
+
+.navbar-active a {
+    color: $theme-color !important;
+}
+
+.arrow-icon {
+    color: #90a4ae;
+    background: #90a4ae;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        color: lighten(#90a4ae, 20%);
+        background: lighten(#90a4ae, 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.gm-icon {
+    background: rgb(200, 78, 63);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        background: lighten(rgb(200, 78, 63), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.gs-icon {
+    background: rgb(80, 134, 236);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        background: lighten(rgb(80, 134, 236), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.gh-icon {
+    color: rgb(37, 41, 46);
+    background: rgb(37, 41, 46);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        color: lighten(rgb(37, 41, 46), 20%);
+        background: lighten(rgb(37, 41, 46), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.li-icon {
+    background: rgb(14, 118, 168);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        background: lighten(rgb(14, 118, 168), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.fb-icon {
+    background: rgb(59, 89, 152);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        background: lighten(rgb(59, 89, 152), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.tw-icon {
+    background: rgb(29, 161, 242);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        background: lighten(rgb(29, 161, 242), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.wp-icon {
+    color: rgb(33, 117, 155);
+    background: rgb(33, 117, 155);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+
+    &:hover {
+        color: lighten(rgb(33, 117, 155), 20%);
+        background: lighten(rgb(33, 117, 155), 20%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+}
+
+.cv h3 {
+    color: $theme-color;
+}
+
+.bibliography .abbr a {
+    &:hover {
+        background: #ff4444 !important;
+    }
+}
+
+progress {
+    /* Reset the appearance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+  
+    /* Progress bar container for Firefox/IE10+ */
+    background-color: transparent;
+  
+    /* Progress bar value for IE10+ */
+    color: $theme-color;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+  
+progress::-webkit-progress-value {
+    background-color: $theme-color;
+}
+  
+progress::-moz-progress-bar {
+    background-color: $theme-color;
+}
+
+.progress-container {
+    background-color: transparent;
+}
+
+.progress-bar {
+    background-color: $theme-color;
+}
 
 // Publications
 
-.publications {
-  margin-top: 2rem;
-  h1 {
-    color: var(--global-theme-color);
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  h2 {
-    margin-bottom: 1rem;
-    span {
-      font-size: 1.5rem;
-    }
-  }
-  h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
-    padding-top: 1rem;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
+.bibliography-year {
+    color: #ddd;
     text-align: right;
-  }
-  ol.bibliography {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
+    float: right;
+}
 
+.bibliography {
     li {
-      margin-bottom: 1rem;
-      .abbr {
-        height: 2rem;
-        margin-bottom: 0.5rem;
-        abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          a {
-            color: white;
-            &:hover {
-              text-decoration: none;
+        .title {
+            font-weight: bolder;
+        }
+
+        .author {
+            a {
+                color: $text-color;
+                border-bottom: 1px dashed;
+
+                &:hover {
+                    border-bottom-style: solid;
+                    text-decoration: none;
+                }
             }
-          }
         }
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
-        }
-      }
-      .title {
-        font-weight: bolder;
-      }
-      .author {
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-        }
-        > em {
-          border-bottom: 1px solid;
-          font-style: normal;
-        }
-      }
-      .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
-        }
-      }
-      .hidden {
-        font-size: 0.875rem;
-        max-height: 0px;
-        overflow: hidden;
-        text-align: justify;
-        -webkit-transition: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-
-        p {
-          line-height: 1.4em;
-          margin: 10px;
-        }
-        pre {
-          font-size: 1em;
-          line-height: 1.4em;
-          padding: 10px;
-        }
-      }
-      .hidden.open {
-        max-height: 100em;
-        -webkit-transition: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
-      }
-      div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
-      }
-      div.abstract.hidden.open {
-        border-color: var(--global-text-color);
-      }
     }
-  }
 }
 
-// Rouge Color Customization
-code {
-  color: var(--global-theme-color);
-}
-// Transitioning Themes
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+nobr > em {
+    font-weight: bold;
+    font-style: normal;
+    color: $theme-color;
 }

@@ -2,7 +2,7 @@
 layout: page
 permalink: /cv/
 title: curriculum vitae
-nav: cv
+nav: curriculum vitae
 ---
 
 <!-- Place PDF download link at the top right. -->
@@ -20,7 +20,7 @@ nav: cv
 			{% if entry.type == "list" %}
 				<ul class="card-text font-weight-light list-group list-group-flush">
 				{% for content in entry.contents %}
-					<li class="list-group-item">{{ content }}</li>
+					<li class="list-group-item">{{ content}}</li>
 				{% endfor %}
 				</ul>
 			{% elsif entry.type == "map" %}
@@ -53,8 +53,8 @@ nav: cv
 					<li class="list-group-item">
 						<div class="row">
 							{% if content.year %}
-								<div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 90px;">
-									<span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle" style="width: 90px">
+								<div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 75px;">
+									<span class="badge font-weight-bold info-color-dark text-uppercase align-middle" style="width: 75px;">
 										{{ content.year }}
 									</span>
 								</div>
@@ -66,7 +66,7 @@ nav: cv
 								{% if content.description %}
 									<ul class="items">
 										{% for item in content.description %}
-										    <li>
+											<li>
 												{% if item.contents %}
 													<span class="item-title">{{ item.title }}</span>
 													<ul class="subitems">
@@ -104,69 +104,8 @@ nav: cv
 					</li>
 				{% endfor %}
 				</ul>
-            {% elsif entry.type == "table-no-bullets" %}
-                <ul class="card-text font-weight-light list-group list-group-flush">
-                {% for content in entry.contents %}
-                    <li class="list-group-item">
-                        <div class="row">
-                            {% if content.year %}
-                                <div class="col-xs-2 cl-sm-2 col-md-auto text-left" style="width: 90px;">
-                                    <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle" style="width: 90px;">
-                                        {{ content.year }}
-                                    </span>
-                                </div>
-                            {% endif %}
-                            <div class="col-xs-10 cl-sm-10 col-md mt-2 mt-md-0">
-                                {% if content.title %}
-                                <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
-                                {% endif %}
-                                {% if content.description %}
-                                    <ul class="items">
-                                        {% for item in content.description %}
-                                            <li style="list-style-type: none;">
-                                                {% if item.contents %}
-                                                    <span class="item-title">{{ item.title }}</span>
-                                                    <ul class="subitems">
-                                                    {% for subitem in item.contents %}
-                                                        <li><span class="subitem">{{ subitem }}</span></li>
-                                                    {% endfor %}
-                                                    </ul>
-                                                {% else %}
-                                                    <span class="item">{{ item }}</span>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endif %}
-                                {% if content.items %}
-                                    <ul class="items">
-                                        {% for item in content.items %}
-                                            <li>
-                                                {% if item.contents %}
-                                                    <span class="item-title">{{ item.title }}</span>
-                                                    <ul class="subitems">
-                                                    {% for subitem in item.contents %}
-                                                        <li><span class="subitem">{{ subitem }}</span></li>
-                                                    {% endfor %}
-                                                    </ul>
-                                                {% else %}
-                                                    <span class="item">{{ item }}</span>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </li>
-                {% endfor %}
-                </ul>
-            {% endif %}
-            {% if entry.note %}
-                <span class="card-text font-weight-light">{{ entry.note }}</span>
-            {% endif %}
+			{% endif %}
 			</div>
 		</div>
 	{% endfor %}
 </div>
-
