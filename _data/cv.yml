@@ -42,13 +42,13 @@
     location: Germany
     description:
     - '<a href="https://cognitive-signal-processing.de/" target="_blank">Cognitive Signal Processing Group</a> in <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr University Bochum</a>, Bochum, Germany'
-    - 'Conducted a machine learning research project for audio-visual signal processing applications in collaboration with <a href="http://www.kecl.ntt.co.jp/english/index.html/" target="_blank">NTT Communication Science Labs</a>'
+    - 'Conducted a research project in collaboration with <a href="http://www.kecl.ntt.co.jp/english/index.html/" target="_blank">NTT Communication Science Labs</a>, focusing on machine learning for audio-visual signal processing applications'
   - title: 'Doctoral Researcher at Ruhr University Bochum'
     year: 2013 - 2019
     location: Germany
     description:
     - '<a href="https://cognitive-signal-processing.de/" target="_blank">Cognitive Signal Processing Group</a> in <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr University Bochum</a>, Bochum, Germany'
-    - 'BLUBB'
+    - 'Fundamental machine learning research in the areas of audio-visual signal processing, causal modeling and robotics'
 
 
 - title: Other Research Experience
@@ -84,13 +84,19 @@
 - title: Teaching Experience
   type: table
   contents:
+  - title: 'Course Coordinator for Master-Seminar Speech and Pattern Recognition'
+    year: 2020
+    location: Germany
+    description:
+    - Graduate-level fully virtual <a href="https://www.ei.ruhr-uni-bochum.de/studium/lehrveranstaltungen/771/" target="_blank">143163 Mas­ter Se­mi­nar Speech and Pat­tern Re­co­gni­ti­on</a> at Ruhr University Bochum
+    - Course coordination, topic selection and preparation, as well as supervision and guidance of the participants
   - title: 'Teaching Assistant for Fundamentals of Automatic Speech Recognition'
     year: 2014 - 2020
     location: Germany
     description:
     - Graduate level class <a href="https://www.ei.ruhr-uni-bochum.de/studium/lehrveranstaltungen/581/" target="_blank">141044 Fundamentals of Automatic Speech Recognition</a> at Ruhr University Bochum, taught by <a href="https://etit.ruhr-uni-bochum.de/fakultaet/professuren/prof-dr-ing-dorothea-kolossa/" target="_blank">Prof. Dorothea Kolossa</a>
     - Responsibility for programming excercises and examination.
-  - title: 'Co-Lecturer and Course Coordinator for Master-Project Pattern Recognition'
+  - title: 'Course Coordinator and Co-Lecturer for Master-Project Pattern Recognition'
     year: 2019
     location: Germany
     description:
