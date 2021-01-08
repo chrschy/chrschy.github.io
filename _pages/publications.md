@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 nav: publications
-description:
+description: peer-reviewed journal and conference papers
 years: [2021, 2020, 2019, 2018, 2017, 2015]
 ---
 

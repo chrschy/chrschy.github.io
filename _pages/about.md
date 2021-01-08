@@ -16,12 +16,15 @@ nav: about
 <!-- Introduction -->
 
 <div class="col text-justify p-0">
-  I am a PhD student in the <a href="http://www.ml.cmu.edu/" target="_blank">Machine Learning Department</a> of the <a href="https://www.scs.cmu.edu/" target="_blank">School of Computer Science</a> at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. My advisor is <a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a> and I work on <a href="http://rtw.ml.cmu.edu/rtw/" target="_blank">Never-Ending Learning</a>. My current research is motivated by the fact that real-world problems require integrating multiple, distinct modalities of information (e.g., image, audio, language, etc.) in ways that machine learning models cannot currently handle well. Most deep learning approaches are not able to utilize information learned from solving one problem to directly help in solving another. They are also not capable of <span class="font-weight-bold">never-ending learning</span>, failing on problems that are dynamic, ever-changing, and not fixed a priori, which is true of problems in the real world due to the dynamicity of nature. With my research, I aim to bridge the gap between UTCs, deep learning, and never-ending learning, by proposing <span class="font-weight-bold">neural cognitive architectures (NCAs)</span> that are inspired by human cognition and that can learn to continuously solve multiple problems that can grow in number over time, across multiple distinct perception and action modalities, and from multiple noisy sources of supervision combined with self-supervision. Their experience from learning to solve past problems can also be leveraged to learn to solve future ones. If you are interested to read more about NCAs, my <a href="{{ '/assets/pdf/thesis/proposal.pdf' | prepend: site.baseurl }}" target="_blank">thesis proposal</a> would be a good place to start. Throughout my PhD I have also worked on <a href="{{ '/projects/' }}">multiple other projects</a> related to artificial intelligence and machine learning.
-  <br/><br/>
-  Before I joined CMU, I graduated with an M.Eng. in <a href="http://www.imperial.ac.uk/electrical-engineering" target="_blank">Electrical and Electronic Engineering</a> from <a href="https://www.imperial.ac.uk/" target="_blank">Imperial College London</a>. For my Master's thesis I proposed a way to use topic modelling methods in order to perform human motion classification.
+I am an experienced machine learning researcher, enjoying to make machine learning solutions tangible for real-world applications, particularly focusing on uncertainty estimation, explainability and leveraging domain knowledge as priors. Currently, I am working as a data scientist in the Cognitive Solutions team at <a href="https://digital.evonik.com/" target="_blank">Evonik Digital GmbH</a>. 
+<br/><br/>
+Before joining Evonik, I was a postdoctoral researcher at the <a href="https://cognitive-signal-processing.de/" target="_blank">Cognitive Signal Processing Group</a> at <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr University Bochum</a>. My research focused on fusing classical probabilistic models with modern deep learning approaches for applications in audiovisual signal processing. I successfully conducted a joint research project with <a href="http://www.kecl.ntt.co.jp/english/index.html/" target="_blank">NTT Communication Science Labs</a>, which was geared towards deep learning models for probabilistic inference in multimodal time-series signals.
+<br/><br/>
+I obtained a PhD degree in Electrical Engineering and Information Technology from <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr University Bochum</a>, advised by <a href="https://etit.ruhr-uni-bochum.de/fakultaet/professuren/prof-dr-ing-dorothea-kolossa/" target="_blank">Dorothea Kolossa</a>. During my time as a doctoral researcher at the <a href="https://cognitive-signal-processing.de/" target="_blank">Cognitive Signal Processing Group</a>, I focused on probabilistic graphical models for multimodal data fusion. A central aspect of my <a href="https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/year/2020/docId/6987/" target="_blank">PhD thesis</a> was the derivation and development of the <a href="https://ieeexplore.ieee.org/document/9037104" target="_blank">Dynamic Stream Weight Kalman Filter</a>. It is a model for recursive Bayesian estimation in dynamical systems with multimodal observations, where time-varying uncertainty in different sensor inputs is explicitly taken into account. Other aspects of my PhD research focused on models for causal inference with application to acoustic signal processing tasks and Bayesian methods for robot audition, where the latter was primarily tackled within the <a href="http://twoears.eu/" target="_blank">Two!Ears</a> research consortium.
+<br/><br/>
 </div>
 
-<!-- News -->
+<!-- News 
 <div class="news mt-3 p-0">
   <h1 class="title mb-4 p-0">news</h1>
   {% assign news = site.news | reverse %}
@@ -37,4 +40,4 @@ nav: about
       </div>
     </div>
   {% endfor %}
-</div>
+</div>-->

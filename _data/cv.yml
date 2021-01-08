@@ -4,15 +4,14 @@
   - name: Full Name
     value: Christopher Schymura
   - name: Contact
-    value: firstname.lastname [at] posteo [dot] de
+    value: christopher [dot] schymura [at] posteo [dot] de
   - name: Languages
     value: German (native), English (fluent), Dutch (beginner)
 
 - title: Research Interests
   type: list
   contents:
-  - I am interested in combining classical probabilistic models with modern deep learning techniques to create powerful learning frameworks that naturally incorporate quantifiable uncertainty estimates and human-interpretable architectures. 
-  - Throughout my doctoral studies, I have primarily worked on these topics in the context of audiovisual signal processing, but I am also keen to find similar solutions in other application areas; especially natural language processing and chemistry.
+  - I am interested in combining classical probabilistic models with modern deep learning techniques to create powerful machine learning frameworks that naturally incorporate quantifiable uncertainty estimates, human-interpretable model structures and suitable priors. I have primarily worked on these topics in the context of audiovisual signal processing, but I am also keen to explore new possibilities in other application areas like natural language processing and robotics.
 - title: Education
   type: table
   contents:
@@ -37,7 +36,7 @@
     location: Germany
     description:
     - '<a href="https://digital.evonik.com/en/what-do-we-do-1183.html/" target="_blank">Cognitive solutions team</a> in <a href="https://digital.evonik.com/" target="_blank">Evonik Digital GmbH</a> , Essen, Germany'
-    - 'Supporting digitalization efforts with focus on machine learning technologies'
+    - 'Supporting digitalization initiatives with focus on machine learning technologies'
   - title: 'Postdoctoral Researcher at Ruhr University Bochum'
     year: 2019 - 2020
     location: Germany
@@ -107,8 +106,12 @@
 - title: Leadership and Volunteering Activities
   type: table
   contents:
+  - year: 2020 - now
+    description: 'Affiliate member of the Machine Learning for Signal Processing Technical Committee within the IEEE Signal Processing Society.'
   - year: 2019 - now
     description: 'Reviewer for WASPAA (2019), EUSIPCO (2019, 2020), IJCNN (2020), DSLW (2021), ICASSP (2021).'
   - year: 2017 - 2020
     description: 'Member of the <a href="https://www.research-school.rub.de/" target="_blank">Research School</a> review committee for funding doctoral research projects at Ruhr University Bochum.'
+  - year: 2014 - now
+    description: 'Member of the Institute of Electrical and Electronics Engineers (IEEE) and the IEEE Signal Processing Society.'
 
