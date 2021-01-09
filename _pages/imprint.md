@@ -10,7 +10,7 @@ description:
 
 <h3>Responsible Parties</h3>
 
-The website <a href="http://www.chrschy.de" target="_blank">www.chrschy.de</a> (the “Site”) is operated and maintained by
+The website <a href="https://chrschy.github.io" target="_blank">chrschy.github.io</a> (the “Site”) is operated and maintained by
 
 ```
 Christopher Schymura

@@ -6,7 +6,7 @@ name: Christopher Schymura
 email: christopher [dot] schymura [at] posteo [dot] de
 description: Personal website of Christopher Schymura.
 footer_text: >
-  <br /> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  <br />Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 # last_updated: true
 
@@ -23,7 +23,7 @@ orcid_id: 0000-0002-6128-3556
 research_gate_profile: Christopher_Schymura
 contact_note: Feel free to drop me a line via email.
 
-google_analytics: 
+google_analytics: G-D3D0F10EYT
 
 # -----------------------------------------------------------------------------
 # Collections

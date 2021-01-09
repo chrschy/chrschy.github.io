@@ -5,12 +5,12 @@ title: curriculum vitae
 nav: curriculum vitae
 ---
 
-<!-- Place PDF download link at the top right. -->
+<!-- Place PDF download link at the top right. 
 <div class="row" style="margin-top: -3.5em;">
 	<a class="ml-auto mr-2" href="/assets/pdf/vitae.pdf" target="_blank">
 	  <img height="60px" src="/assets/img/pdf_icon.svg">
 	</a>
-</div>
+</div>-->
 
 <div class="cv">
 	{% for entry in site.data.cv %}
