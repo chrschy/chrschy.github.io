@@ -70,7 +70,8 @@ Controller for the purposes of the General Data Protection Regulation (GDPR), ot
 
 ```
 Christopher Schymura
-Gebäude ID 2 / 328
+Ruhr-Universität Bochum
+Gebäude ID 2/328
 Universitätsstr. 150
 44801 Bochum, Germany
 
