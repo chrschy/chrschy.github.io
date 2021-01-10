@@ -13,7 +13,7 @@ description:
 ```
 Christopher Schymura
 Ruhr-Universität Bochum
-Gebäude ID2/328
+Gebäude ID 2/328
 Universitätsstr. 150
 44801 Bochum, Germany
 
@@ -29,7 +29,7 @@ Christopher Schymura
 Ruhr-Universität Bochum
 Gebäude ID 2/328
 Universitätsstr. 150
-44801 Bochum
+44801 Bochum, Germany
 ```
 
 <h3>Haftungsausschluss</h3>
