@@ -85,7 +85,7 @@
           <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.html }}" target="_blank">HTML</a>
         {% endif %}
         {% if entry.pdf %}
-          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl }}" target="_blank">PDF</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
         {% endif %}
         {% if entry.supp %}
           <a class="badge grey waves-effect font-weight-light mr-1" href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl }}" target="_blank">Supplementary</a>
