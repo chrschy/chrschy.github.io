@@ -1,17 +1,33 @@
 ---
 ---
 
-@INPROCEEDINGS{Schymura2021,
+@INPROCEEDINGS{Wissing2021,
+	abbr		= {ICASSP},
+	author	= {Julio Wissing and Benedikt Bönninghoff and Dorothea Kolossa and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Christopher Schymura},
+	booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+	title	= {Data Fusion for Audiovisual Speaker Localization: {E}xtending Dynamic Stream Weights to the Spatial Domain},
+	year		= {2021},
+	volume	= {},
+	number	= {},
+	pages	= {},
+	doi		= {},
+	arxiv	= {2102.11588},
+	code	= {https://github.com/rub-ksv/spatial-stream-weights},
+	abstract	= {Estimating the positions of multiple speakers can be helpful for tasks like automatic speech recognition or speaker diarization. Both applications benefit from a known speaker position when, for instance, applying beamforming or assigning unique speaker identities. Recently, several approaches utilizing acoustic signals augmented with visual data have been proposed for this task. However, both the acoustic and the visual modality may be corrupted in specific spatial regions, for instance due to poor lighting conditions or to the presence of background noise. This paper proposes a novel audiovisual data fusion framework for speaker localization by assigning individual dynamic stream weights to specific regions in the localization space. This fusion is achieved via a neural network, which combines the predictions of individual audio and video trackers based on their time- and location-dependent reliability. A performance evaluation using audiovisual recordings yields promising results, with the proposed fusion approach outperforming all baseline models.}
+}
+
+@INPROCEEDINGS{Schymura2020c,
   abbr		= {EUSIPCO},
   author	= {Christopher Schymura and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Dorothea Kolossa},  
   booktitle	= {European Signal Processing Conference (EUSIPCO)},   
   title	= {Exploiting Attention-based Sequence-to-Sequence Architectures for Sound Event Localization},   
-  year		= {2021},  
+  year		= {2020},  
   volume	= {},  
   number	= {},  
-  pages	= {231-235},  
+  pages		= {231-235},  
   doi		= {10.23919/Eusipco47968.2020.9287224},
   pdf		= {https://ieeexplore.ieee.org/document/9287224},
+  arxiv		= {2103.00417},
   code		= {https://github.com/chrschy/adrenaline},
   abstract	= {Sound event localization frameworks based on deep neural networks have shown increased robustness with respect to reverberation and noise in comparison to classical parametric approaches. In particular, recurrent architectures that incorporate temporal context into the estimation process seem to be well-suited for this task. This paper proposes a novel approach to sound event localization by utilizing an attention-based sequence-to-sequence model. These types of models have been successfully applied to problems in natural language processing and automatic speech recognition. In this work, a multi-channel audio signal is encoded to a latent representation, which is subsequently decoded to a sequence of estimated directions-of-arrival. Herein, attentions allow for capturing temporal dependencies in the audio signal by focusing on specific frames that are relevant for estimating the activity and direction-of-arrival of sound events at the current time-step. The framework is evaluated on three publicly available datasets for sound event localization. It yields superior localization performance compared to state-of-the-art methods in both anechoic and reverberant conditions.}
 }
