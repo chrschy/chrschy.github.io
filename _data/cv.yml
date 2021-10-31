@@ -11,7 +11,7 @@
 - title: Research Interests
   type: list
   contents:
-  - I am interested in combining classical probabilistic models with modern deep learning techniques to create powerful machine learning frameworks that naturally incorporate quantifiable uncertainty estimates, human-interpretable model structures and suitable priors. I have primarily worked on these topics in the context of audiovisual signal processing, but I am also keen to explore new possibilities in other application areas like natural language processing and robotics.
+  - I am interested in combining classical probabilistic models with modern deep learning techniques to create powerful machine learning frameworks that naturally incorporate quantifiable uncertainty estimates, human-interpretable model structures and suitable priors. I have primarily worked on these topics in the context of audiovisual signal processing, but I am also keen to explore new possibilities in other application areas like natural language processing.
 - title: Education
   type: table
   contents:
@@ -31,12 +31,18 @@
 - title: Work Experience
   type: table
   contents:
+  - title: 'Data Scientist at Bayer Crop Science'
+    year: 2021 - NOW
+    location: Germany
+    description:
+    - 'Analytics and Pipeline Design Group at <a href="https://www.cropscience.bayer.com" target="_blank">Bayer Crop Science</a>, Monheim, Germany'
+    - 'Conducting data science projects in the domain of field trial analytics'
   - title: 'Data Scientist at Evonik Industries AG'
-    year: 2020 - NOW
+    year: 2020 - 2021
     location: Germany
     description:
     - '<a href="https://digital.evonik.com/en/what-do-we-do-1183.html/" target="_blank">Cognitive solutions team</a> in <a href="https://digital.evonik.com/" target="_blank">Evonik Digital GmbH</a> , Essen, Germany'
-    - 'Supporting digitalization initiatives with focus on machine learning technologies'
+    - 'Supported digitalization initiatives with focus on machine learning technologies'
   - title: 'Postdoctoral Researcher at Ruhr University Bochum'
     year: 2019 - 2020
     location: Germany
@@ -79,7 +85,10 @@
   contents:
   - year: Awards
     items:
-    - 'Best student paper award at the 14th International Conference on Latent Variable Analysis and Signal Separation (LVA/ICA) in Guildford, UK (2018)'
+    - '1st place on subtask 2 ("Engaging Comment Classification") at the <a href="https://germeval2021toxic.github.io/SharedTask/">GermEval 2021 Shared Task on the identification of Toxic, Engaging and Fact-Claiming Comments</a> as part of the <a href="https://konvens2021.phil.hhu.de/">KONVENS</a> conference on natural language processing in Düsseldorf, Germany (2021). Collaborative work of the <a href="https://data-science-kitchen.github.io/" target="_blank">Data Science Kitchen</a>.'
+  - year: Awards
+    items:
+    - 'Best student paper award at the 14th International Conference on Latent Variable Analysis and Signal Separation (LVA/ICA) in Guildford, UK (2018). Collaborative work with <a href="https://sites.google.com/view/boazrafaely">Boaz Rafaely</a> and his group at <a href="https://in.bgu.ac.il/en/Pages/default.aspx">Ben-Gurion University of the Negev</a>.'
 
 - title: Teaching Experience
   type: table
@@ -112,6 +121,8 @@
 - title: Leadership and Volunteering Activities
   type: table
   contents:
+  - year: 2020 - now
+    description: 'Co-founder of the non-profit group <a href="https://data-science-kitchen.github.io/" target="_blank">Data Science Kitchen</a>.'
   - year: 2020 - now
     description: 'Affiliate member of the Machine Learning for Signal Processing Technical Committee within the IEEE Signal Processing Society.'
   - year: 2019 - now
